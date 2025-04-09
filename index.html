@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cates Dental Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Cates Dental</div>
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Your Smile Is Our Priority</h1>
+                <p>Welcome to Cates Dental Services - providing quality dental care for the whole family.</p>
+                <button class="cta-button">Book Appointment</button>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Our Practice</h2>
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <p>At Cates Dental Services, we've been caring for families since 2005. Our modern facility offers state-of-the-art technology in a comfortable, welcoming environment.</p>
+                    <p>We believe in preventive care and education as the keys to optimal dental health. We strive to provide dental health care rather than disease care, ensuring you maintain a healthy smile for life.</p>
+                </div>
+                <div class="image-content">
+                    <img src="images/cate.png" alt="Cates Dental Office sign" class="about-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Our Dental Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Preventive Care</h3>
+                    <p>Regular cleanings, exams, and x-rays to maintain your oral health and prevent problems before they start.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Cosmetic Dentistry</h3>
+                    <p>Teeth whitening, veneers, and bonding to give you the beautiful smile you've always wanted.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Restorative Services</h3>
+                    <p>Fillings, crowns, bridges, and implants to restore function and appearance to damaged teeth.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Pediatric Dentistry</h3>
+                    <p>Gentle, compassionate dental care for children to establish lifelong healthy habits.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="portfolio">
+            <h2>Meet Our Team</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">Dr. James Cates, DDS</div>
+                <div class="portfolio-item">Dr. Emily Warren, DMD</div>
+                <div class="portfolio-item">Sarah Johnson, Hygienist</div>
+                <div class="portfolio-item">Mark Davis, Dental Assistant</div>
+                <div class="portfolio-item">Lisa Chen, Office Manager</div>
+                <div class="portfolio-item">Karen Smith, Receptionist</div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Request an Appointment</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="appointment-type">Appointment Type</label>
+                    <select id="appointment-type" name="appointment-type" required>
+                        <option value="">Select an option</option>
+                        <option value="cleaning">Regular Cleaning</option>
+                        <option value="emergency">Emergency Care</option>
+                        <option value="cosmetic">Cosmetic Consultation</option>
+                        <option value="new-patient">New Patient Exam</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Additional Information</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Request Appointment</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Cates Dental Services</h3>
+                <p>Providing quality dental care since 2005.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Office Hours</h3>
+                <p>Monday-Thursday: 8am-5pm</p>
+                <p>Friday: 8am-2pm</p>
+                <p>Saturday-Sunday: Closed</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>123 Maple Street, Suite 101</p>
+                <p>Anytown, ST 12345</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@catesdental.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Cates Dental Services. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.mobile-nav').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
